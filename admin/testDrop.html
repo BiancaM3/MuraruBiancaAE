@@ -1,0 +1,27 @@
+<?php
+$link=mysqli_connect ("127.0.0.1","root","");
+mysqli_select_db(&link,"catalog");
+?>
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+    <title>i tried</title>
+</HEAD>
+<BODY>
+    <form name="form1" action="" method="post">
+        <select>
+            <?php 
+            $red=mysqli_query($link,"select name from categories");
+            while($row=mysqli_fetch_array ($res))
+            {
+            ?>
+            <option><?php echo $row["name"]; ?> </option>
+            
+            <?php
+            }
+            ?>
+            
+        </select>
+    </form>
+</BODY>
+</HTML>
