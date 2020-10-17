@@ -36,3 +36,8 @@ SHOW DATABASES;
 <br>
 <br>
 [ Informatie preluata: https://tutoriale.webtech-superheroes.net/configurare-mediu-de-lucru/mysql ]
+# Import baza de date
+source ~/environment/MuraruBiancaAE/sql/catalog.sql
+<br>
+# Run Server.js
+node server.jr
